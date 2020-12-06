@@ -1,38 +1,73 @@
-.App {
+body {
   text-align: center;
+  background-image: url("./wallpaperflare.com_wallpaper\ \(2\).jpg");
+  background-size: contain;
+  background-color: rgba(245, 191, 75, 0.899);
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-fix{
+  background-color: rgba(232, 232, 232, 0.865);
+  width: 1190px;
+  height: 130px;
+  font-size: 110px;
+  color: rgba(255, 170, 42, 0.968);
+  text-align: center;
+justify-content: center;
+  margin-left: 14%;
+  border-radius: 25px;
+  margin-top: 5px;
+  padding: -10px;
+  letter-spacing: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+position: absolute;
+top: -5px;
+left: 35%;
+font-family: 'Fredoka One', cursive;
+text-shadow: 2px 2px rgb(31, 31, 31);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.total-book{
+  background-color: rgba(138, 138, 138, 0.954);
+  background-size: contain;
+  width: 400px;
+  height: 350px;
   display: flex;
+  margin-left: 20%;
+  text-align: right;
+  flex-wrap: wrap;
+  display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  margin-top: 50px;
+  margin-left: 155px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 12px; 
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  border-radius: 10px;
+  
+}
+.nav-bar {
+
+font-size: 45px;
+padding: 18px;
+margin-left: -10px;
+position: absolute;
+left: 25px;
+background-color: rgba(232, 232, 232, 0.865);
+height: 600px;
+width: 140px;
+border-radius: 25px;
+font-family: 'Fredoka One', cursive;
+text-shadow: 2px 2px rgb(31, 31, 31);
+
+
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
