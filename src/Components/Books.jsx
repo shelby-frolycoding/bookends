@@ -34,7 +34,7 @@ function Books(props) {
           <h2>{item.fields.thoughts}</h2>
         </div>
         <div className="book-image">
-          <img src ={'https://png2.cleanpng.com/sh/9ef5f9e48d34d826335c9e296b7bdd4a/L0KzQYm3VMA4N5V3fZH0aYP2gLBuTfJwd5wyft5qdD3ndcTwhB4uapD0gAU2NXHmSYm7g8YyPZM5TKQ3OUC1RoeBV8cyPWM4SacBMUa5QImBWb5xdpg=/kisspng-book-flat-design-books-5ac984c615b442.9026687715231561660889.png'}/>
+          <img src ={'https://png2.cleanpng.com/sh/9ef5f9e48d34d826335c9e296b7bdd4a/L0KzQYm3VMA4N5V3fZH0aYP2gLBuTfJwd5wyft5qdD3ndcTwhB4uapD0gAU2NXHmSYm7g8YyPZM5TKQ3OUC1RoeBV8cyPWM4SacBMUa5QImBWb5xdpg=/kisspng-book-flat-design-books-5ac984c615b442.9026687715231561660889.png'} alt="bookboi"/>
         </div>
 
         {/* all my buttons */}
