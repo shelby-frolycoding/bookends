@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Nav from "./Components/Nav";
 import Books from "./Components/Books";
 import Add from "./Components/Add";
@@ -38,9 +38,8 @@ function App() {
         <Books books={books} />
       </Route>
 
-      {/* <Route path='/add-book'>
-        <Add />
-        <Route /> */}
+     
+       
     </div>
   );
 }

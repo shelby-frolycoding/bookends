@@ -29,13 +29,40 @@ font-family: 'Fredoka One', cursive;
 text-shadow: 2px 2px rgb(31, 31, 31);
 }
 h1 {
-  color: rgb(247, 166, 25);
+  color: rgb(43, 43, 43);
+  font-family: 'Carter One', cursive;
+  font-size: 17px;
+  width: 144px;
+  margin-left: 460px;
+  background-color: rgba(255, 200, 62, 0.858);
+  border-radius: 20px;
+  text-align: center;
+  text-shadow: none;
+  
+ 
+}
+.total-book img {
+width: 370px;
+height: auto;
+position: absolute;
+left: 500px;
+margin-top: -470px;
+
+
+
+
 }
 
 .book-title, .author, .chaptersread, .start-date, .lastread, .starreview, .thoughts {
-  font-size: 14px;
+  font-size: 13.5px;
   margin-top: -5px;
   margin-bottom: -5px;
+  font-family: 'Carter One', cursive;
+  text-shadow: 1.5px 1.5px black;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  
+ 
 }
 
 
@@ -53,18 +80,30 @@ h1 {
   flex-direction: column;
   padding-right: 40px;
   padding-bottom: 5px;
-  padding-top: 5px;
+  padding-top: 10px;
   margin-top: 50px;
-  color: rgb(255, 255, 255);
-  letter-spacing: 4.5px;
   border-radius: 10px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  text-shadow: 1.5px 1.5px black;
   
 }
+button {
+  width: 30px;
+  height: 30px;
+}
+.buttons {
+display: flex;
+justify-content: flex-start;
+margin-left: 49%;
+
+
+}
+.delete-button{
+margin-left: 10px;
+
+}
+
 .nav-bar {
 
-font-size: 45px;
+font-size: 80px;
 padding: 18px;
 margin-left: -10px;
 margin-right: 50px;

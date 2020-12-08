@@ -5,9 +5,11 @@ const Nav = () => {
     return (
     
       <div className="nav-bar">
-        <p><Link to='/'>Home</Link> </p>
-        <p><Link to='/add-book'>Add</Link></p>
-        <p><Link to='/add-favs'>Favs</Link></p>
+        <div className= "emoji-nav">
+        <p><Link to='/'></Link>🏠</p>
+        <p><Link to='/add-book'>🆕</Link></p>
+        <p><Link to='/add-favs'>💟</Link></p>
+        </div>
       </div>
       
         
@@ -16,3 +18,4 @@ const Nav = () => {
 };
 
 export default Nav;
+
