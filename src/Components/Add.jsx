@@ -6,39 +6,39 @@ import './Add.css';
 
 
 
-  const Add = (props) => {
-    const [title, setTitle] = useState("");
-    const [author, setAuthor] = useState("");
-    const [startDate, setStartDate] = useState("");
-    const [chaptersRead, setChaptersRead] = useState("");
-    const [lastRead, setLastRead] = useState("");
-    const [starReview, setStarReview] = useState("");
-    const [thoughts, setThoughts] = useState("");
-    const history = useHistory();
+const Add = (props) => {
+  const [title, setTitle] = useState("");
+  const [author, setAuthor] = useState("");
+  const [startDate, setStartDate] = useState("");
+  const [chaptersRead, setChaptersRead] = useState("");
+  const [lastRead, setLastRead] = useState("");
+  const [starReview, setStarReview] = useState("");
+  const [thoughts, setThoughts] = useState("");
+  const history = useHistory();
+
+  let fields = {
+    title: title,
+    author: author,
+    startdate: startDate,
+    chaptersread: chaptersRead,
+    lastread: lastRead,
+    starreview: starReview,
+    thoughts: thoughts,
+  };
+
+  async function handleSubmit(e) {
+    e.preventDefault();
 
 
-    async function handleSubmit(e) {
-      e.preventDefault();
-      let data = {
-        title,
-        author,
-        startDate,
-        chaptersRead,
-        lastRead,
-        starReview,
-        thoughts,
-      };
-    
-    
-      await axios.post(baseURL, { fields: data }, config);
-      props.setToggleFetch((prev) => !prev);
-      history.push("/");
-    }
-  
+    await axios.post(baseURL, { fields }, config);
+    props.setToggleFetch((prev) => !prev);
+    history.push("/");
+  }
 
-    return (
-    
-      <div className="add-new">
+
+  return (
+
+    <div className="add-new">
       <div>
         <form onSubmit={handleSubmit}>
           <label htmlFor='title'>Title</label>
@@ -104,18 +104,18 @@ import './Add.css';
               setThoughts(e.target.value);
             }}
           />
-            <div className="submit-button">
-              <input type='submit' value='ADD ME!' />
-              
-              </div>
-          </form>
-     
-        
-          </div>
-        </div>
-      
-    );
-  }
+          
+          <button className= "add-button" type='submit' >ADD ME!!</button>
+
+          {/* </div> */}
+        </form>
+      </div>
+
+    </div>
+
+
+  );
+}
 
 
 export default Add;

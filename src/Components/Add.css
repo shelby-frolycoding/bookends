@@ -2,8 +2,9 @@ body {
 background-color: rgb(61, 184, 186);
 text-align: center;
 font-family: 'Carter One', cursive;
-color: rgb(43, 43, 43);
+color: rgb(255, 166, 0);
 letter-spacing: 4px;
+text-shadow: 1px 1px black;
 }
 
 .add-new{

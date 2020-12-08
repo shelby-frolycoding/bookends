@@ -4,7 +4,8 @@ import { Route } from "react-router-dom";
 import Nav from "./Components/Nav";
 import Books from "./Components/Books";
 import Add from "./Components/Add";
-import { baseURL, config } from "./services"
+import Fav from "./Components/Fav";
+import { baseURL, config } from "./services";
 import './App.css'; 
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
       <Route path='/add-book'>
       <Add setToggleFetch={setToggleFetch} />
       </Route>
+      <Route path='/favorites'>
+                <Fav setToggleFetch={setToggleFetch} />
+            </Route>
 
      
        

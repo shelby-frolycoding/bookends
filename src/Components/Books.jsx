@@ -1,7 +1,18 @@
 import React from "react"
+import axios from "axios";
+import { baseURL, config } from "../services";
+
 
 function Books(props) {
+
   const items = props.books.map(item => {
+
+    const handleDelete = async () => {
+      const bookURL = `${baseURL}/${item.id}`;
+      await axios.delete(bookURL, config);
+      props.setToggleFetch((prev) => !prev);
+    };
+    
     return (
 
       <div className="total-book">
@@ -43,7 +54,7 @@ function Books(props) {
             <button>❤️</button>
           </div>
           <div className="delete-button">
-            <button>🗑</button>
+            <button onClick={handleDelete}>🗑</button>
           </div>
         </div>
 
