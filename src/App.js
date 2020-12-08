@@ -5,6 +5,7 @@ import Nav from "./Components/Nav";
 import Books from "./Components/Books";
 import Add from "./Components/Add";
 import './App.css';
+import logo from "./backbook.png"; 
 
 function App() {
   const [books, updateBooks] = useState([])
@@ -32,9 +33,9 @@ function App() {
       <Nav />
     
       <Route exact path='/'>
-      <div className= "header-fix">
-      <header>BookEnds</header>
-      </div>
+        <div className="header-fix">
+         <header>BookEnds</header>
+         </div>
         <Books books={books} />
       </Route>
 
@@ -47,3 +48,10 @@ function App() {
 <footer></footer>
 
 export default App;
+
+
+
+{/* <img src={'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Books_Flat_Icon_Vector.svg/1382px-Books_Flat_Icon_Vector.svg.png'} /> */}
+{/* <div className="second-booklogo">
+            <img src={logo} alt="logo" />
+            </div> */}

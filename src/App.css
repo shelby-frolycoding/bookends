@@ -4,30 +4,42 @@ body {
   background-size: contain;
   background-color: rgba(245, 191, 75, 0.899);
   
+  
 }
-
-.header-fix{
+.header-fix {
+  display: flex;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 2px 2px rgb(31, 31, 31);
   background-color: rgba(232, 232, 232, 0.865);
   width: 1190px;
   height: 130px;
-  font-size: 110px;
+  font-size: 90px;
   color: rgba(255, 170, 42, 0.968);
-  text-align: center;
-justify-content: center;
+  justify-content: center;
   margin-left: 14.5%;
   border-radius: 25px;
-  margin-top: 25px;
+  margin-top: -46%;
   padding: -10px;
   letter-spacing: 10px;
+  
+
+}
+.header-fix img {
+width: 100px;
+height: 100px;
+float: left;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 5px;
+display: flex;
+
+}
+.second-booklogo img {
+display: flex;
+justify-content: flex-end;
+margin-left: 10%;
 }
 
-header {
-position: absolute;
-top: 15px;
-left: 35%;
-font-family: 'Fredoka One', cursive;
-text-shadow: 2px 2px rgb(31, 31, 31);
-}
 h1 {
   color: rgb(43, 43, 43);
   font-family: 'Carter One', cursive;
@@ -44,12 +56,10 @@ h1 {
 .total-book img {
 width: 370px;
 height: auto;
-position: absolute;
-left: 500px;
+left: 588px;
 margin-top: -470px;
-
-
-
+padding-left: 10px;
+display: flex;
 
 }
 
@@ -61,6 +71,7 @@ margin-top: -470px;
   text-shadow: 1.5px 1.5px black;
   color: rgb(255, 255, 255);
   letter-spacing: 2px;
+  
   
  
 }
@@ -105,15 +116,23 @@ margin-left: 10px;
 
 font-size: 80px;
 padding: 18px;
-margin-left: -10px;
-margin-right: 50px;
-position: absolute;
+margin-left: 20px;
+margin-top: 25px;
 left: 25px;
 background-color: rgba(232, 232, 232, 0.865);
 height: 600px;
-width: 140px;
+width: 130px;
 border-radius: 25px;
 font-family: 'Fredoka One', cursive;
 text-shadow: 2px 2px rgb(31, 31, 31);
+display: flex;
+justify-content: center;
+
 }
 
+@media only screen and (max-width:620px) {
+ 
+  body, .total-book, .nav-bar,.book-title, .author, .chaptersread, .start-date, .lastread, .starreview, .thoughts, .header-fix, h1,  {
+    width:100%;
+  }
+}
