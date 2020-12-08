@@ -130,9 +130,9 @@ justify-content: center;
 
 }
 
-@media only screen and (max-width:620px) {
+/* @media only screen and (max-width:620px) {
  
   body, .total-book, .nav-bar,.book-title, .author, .chaptersread, .start-date, .lastread, .starreview, .thoughts, .header-fix, h1,  {
     width:100%;
   }
-}
+} */
