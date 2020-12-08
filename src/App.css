@@ -24,21 +24,6 @@ body {
   
 
 }
-.header-fix img {
-width: 100px;
-height: 100px;
-float: left;
-margin-left: 10%;
-margin-right: 10%;
-margin-top: 5px;
-display: flex;
-
-}
-.second-booklogo img {
-display: flex;
-justify-content: flex-end;
-margin-left: 10%;
-}
 
 h1 {
   color: rgb(43, 43, 43);
