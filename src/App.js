@@ -3,29 +3,23 @@ import axios from "axios";
 import { Route } from "react-router-dom";
 import Nav from "./Components/Nav";
 import Books from "./Components/Books";
-// import Add from "./Components/Add";
+import Add from "./Components/Add";
+import { baseURL, config } from "./services"
 import './App.css'; 
 
 function App() {
   const [books, updateBooks] = useState([])
+  const [toggleFetch, setToggleFetch] = useState(false)
 
-  const getBooksData = async () => {
-    const baseUrl = "https://api.airtable.com/v0/appkc7LtCYRf4lQd3/add"
-    const config = {
-      headers: {
-        "Authorization": "Bearer keySFDZnBPT0vdG0E"
+    useEffect(() => {
+      async function getBooksData() {
+          let resp = await axios.get(baseURL, config);
+          updateBooks(resp.data.records);
       }
-    }
 
-    const resp = await axios.get(baseUrl, config)
-    console.log(resp)
-    updateBooks(resp.data.records)
-  }
-
-  useEffect(() => {
     getBooksData()
 
-  }, [])
+  }, [toggleFetch])
   
   return (
     <div>
@@ -35,7 +29,10 @@ function App() {
         <div className="header-fix">
          <header>BookEnds</header>
          </div>
-        <Books books={books} />
+        <Books books={books} setToggleFetch={setToggleFetch} />
+      </Route>
+      <Route path='/add-book'>
+      <Add setToggleFetch={setToggleFetch} />
       </Route>
 
      
