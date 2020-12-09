@@ -15,7 +15,7 @@ function Books(props) {
     };
     
     return (
-
+      <div className="fix-div">
       <div className="total-book">
 
         <div className="book-title">
@@ -59,7 +59,7 @@ function Books(props) {
           </div>
         </div>
 
-
+        </div>
 
       </div>
     )

@@ -1,3 +1,7 @@
+.fix-div {
+  margin-top: -55%;
+}
+
 .total-book img {
   width: 370px;
   height: auto;
@@ -35,10 +39,13 @@
     display: inline-flex;
     flex-direction: column;
     padding-right: 40px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     padding-top: 10px;
-    margin-top: 50px;
     border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 820px;
+    
+    
     
   }
   button {
