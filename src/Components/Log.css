@@ -1,0 +1,40 @@
+.log-input {
+font-family: 'Oswald', sans-serif;
+width: 400px;
+}
+
+.thought-input {
+height: 100px;
+width: 400px;
+}
+
+.log-form {
+  font-family: 'Oswald', sans-serif;
+  text-shadow: none;
+  
+}
+.add-log {
+
+width: 700px;
+height: 500px;
+background-color: rgba(255, 216, 59, 0.906);
+display: flex;
+justify-content: center;
+text-align: center;
+margin-left: 30%;
+margin-top: -45%;
+color: black;
+font-family: 'Oswald', sans-serif;
+font-size: 20px;
+
+}
+.log-button {
+width: 90px;
+height: 35px;
+font-family: 'Carter One', cursive;
+border-style: none;
+
+}
+.log-button:hover {
+  background-color: tomato;
+  }

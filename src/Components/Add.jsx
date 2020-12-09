@@ -105,7 +105,7 @@ const Add = (props) => {
             }}
           />
           
-          <button className= "add-button" type='submit' >ADD ME!!</button>
+          <button className= "add-button" type='submit' >add me</button>
 
           {/* </div> */}
         </form>
