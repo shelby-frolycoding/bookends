@@ -5,6 +5,7 @@ import Nav from "./Components/Nav";
 import Books from "./Components/Books";
 import Add from "./Components/Add";
 import Fav from "./Components/Fav";
+import Home from "./Components/Home";
 import { baseURL, config } from "./services";
 import './App.css'; 
 
@@ -29,15 +30,21 @@ function App() {
       <Route exact path='/'>
         <div className="header-fix">
          <header>BookEnds</header>
-         </div>
-        <Books books={books} setToggleFetch={setToggleFetch} />
+        </div>
+      <Home setToggleFetch={setToggleFetch} />
       </Route>
+
+      <Route path='/books'>
+      <Books books={books} setToggleFetch={setToggleFetch} />
+      </Route>
+
       <Route path='/add-book'>
       <Add setToggleFetch={setToggleFetch} />
       </Route>
+
       <Route path='/favorites'>
-                <Fav setToggleFetch={setToggleFetch} />
-            </Route>
+     <Fav setToggleFetch={setToggleFetch} />
+    </Route>
 
      
        

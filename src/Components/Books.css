@@ -1,0 +1,58 @@
+.total-book img {
+  width: 370px;
+  height: auto;
+  left: 588px;
+  margin-top: -470px;
+  padding-left: 10px;
+  display: flex;
+  
+  }
+  
+  .book-title, .author, .chaptersread, .start-date, .lastread, .starreview, .thoughts {
+    font-size: 13.5px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    font-family: 'Carter One', cursive;
+    text-shadow: 1.5px 1.5px black;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    
+    
+   
+  }
+  
+  
+  
+  .total-book{
+    background-color: rgba(138, 138, 138, 0.954);
+    background-size: contain;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    margin-left: 9%;
+    text-align: right;
+    flex-wrap: wrap;
+    display: inline-flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+    
+  }
+  button {
+    width: 30px;
+    height: 30px;
+  }
+  .buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 49%;
+  
+  
+  }
+  .delete-button{
+  margin-left: 10px;
+  
+  }

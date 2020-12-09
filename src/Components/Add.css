@@ -40,24 +40,26 @@ font-family: 'Oswald', sans-serif;
 font-size: 19px;
 
 }
-.submit-button {
-padding-top: 15px;
-text-align: center;
-font-size: 20px;
 
-}
-.submit-button input{
-height: 90px;
-width : 92px;
-margin-left: 30%;
+
+.add-button {
+height: 50px;
+width : 110px;
+margin-left: 0%;
 text-align: center;
 justify-content: center;
 background-color: rgb(240, 210, 40);
 border-radius: 15px;
-border-color: rgb(240, 210, 40);
+border-color: transparent;
 color: rgb(33, 33, 33);
 text-decoration: none;
 font-family: 'Carter One', cursive;
 font-size: 19px;
 padding: 2px;
+text-align: center;
+font-size: 20px;
+
+}
+.add-button:hover {
+background-color: tomato;
 }
