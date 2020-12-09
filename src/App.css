@@ -85,13 +85,16 @@ display: flex;
 justify-content: center;
 
 }
-.emoji-nav {
-text-decoration: none;
-}
-link {
-  text-decoration: none;
-}
-p {
-  text-decoration: none;
-}
 
+.home-icon {
+  text-decoration: none;
+}
+.book-icon {
+  text-decoration: none;
+}
+.new-icon {
+  text-decoration: none;
+}
+.write-icon {
+  text-decoration: none;
+}

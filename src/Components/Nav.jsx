@@ -6,10 +6,10 @@ const Nav = () => {
     
       <div className="nav-bar">
         <div className= "emoji-nav">
-          <p><Link to='/'>🏠</Link></p>
-          <p><Link to='/books'>📚</Link></p>
-        <p><Link to='/add-book'>🆕</Link></p>
-        <p><Link to='/add-favs'>💟</Link></p>
+          <p><Link className= "home-icon" to='/'>🏠</Link></p>
+          <p><Link className= "book-icon "to='/books'>📚</Link></p>
+        <p><Link className= "new-icon" to='/add-book'>🆕</Link></p>
+        <p><Link className= "write-icon" to='/log'>✏️</Link></p>
         </div>
       </div>
       
