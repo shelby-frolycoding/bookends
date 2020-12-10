@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { baseURL, config } from '../services/index';
+import { logURL, config } from '../services/index';
 import "./Log.css";
+
 
 
 const Log = (props) => {
@@ -21,7 +22,7 @@ const Log = (props) => {
     e.preventDefault();
 
 
-    await axios.post(baseURL, { fields }, config);
+    await axios.post(logURL, { fields }, config);
     props.setToggleFetch((prev) => !prev);
     history.push("/log");
   }

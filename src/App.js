@@ -6,48 +6,50 @@ import Books from "./Components/Books";
 import Add from "./Components/Add";
 import Log from "./Components/Log";
 import Home from "./Components/Home";
+import Showlog from "./Components/Showlog";
 import { baseURL, config } from "./services";
-import './App.css'; 
+import './App.css';
 
 function App() {
   const [books, updateBooks] = useState([])
   const [toggleFetch, setToggleFetch] = useState(false)
 
-    useEffect(() => {
-      async function getBooksData() {
-          let resp = await axios.get(baseURL, config);
-          updateBooks(resp.data.records);
-      }
+  useEffect(() => {
+    async function getBooksData() {
+      let resp = await axios.get(baseURL, config);
+      updateBooks(resp.data.records);
+    }
 
     getBooksData()
 
   }, [toggleFetch])
-  
+
   return (
     <div>
       <Nav />
-    
+
       <Route exact path='/'>
         <div className="header-fix">
-         <header>BookEnds</header>
+          <header>BookEnds</header>
         </div>
-      <Home setToggleFetch={setToggleFetch} />
+        <Home setToggleFetch={setToggleFetch} />
       </Route>
 
       <Route path='/books'>
-      <Books books={books} setToggleFetch={setToggleFetch} />
+        <Books books={books} setToggleFetch={setToggleFetch} />
       </Route>
 
       <Route path='/add-book'>
-      <Add setToggleFetch={setToggleFetch} />
+        <Add setToggleFetch={setToggleFetch} />
       </Route>
 
       <Route path='/log'>
-     <Log setToggleFetch={setToggleFetch} />
-    </Route>
+        <Log setToggleFetch={setToggleFetch} />
+        <Showlog setToggleFetch={setToggleFetch} toggleFetch = {toggleFetch} />
+      </Route>
 
-     
-       
+
+
     </div>
   );
 }

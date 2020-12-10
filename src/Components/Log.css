@@ -15,8 +15,8 @@ width: 400px;
 }
 .add-log {
 
-width: 700px;
-height: 500px;
+width: 600px;
+height: 400px;
 background-color: rgba(255, 216, 59, 0.906);
 display: flex;
 justify-content: center;
@@ -38,3 +38,34 @@ border-style: none;
 .log-button:hover {
   background-color: tomato;
   }
+
+  .show-log {
+  width: 700px;
+  height: 500px;
+  background-color: rgba(254, 254, 254, 0.899);
+  text-align: left;
+  justify-content: flex-start;
+  display: flex;
+  margin-left: 26%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  }
+.book-show {
+margin-left: -70%;
+  }
+.date-show {
+margin-left: -70%;
+    }
+.log-show {
+ margin-left: -70%;
+  }
+
+  .delete-log {
+  margin-left: -5%;
+  margin-top: 65%;
+  }
+
+.log-data {
+margin-left: 46%;
+font-family: 'Oswald', sans-serif;
+}
