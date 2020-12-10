@@ -11,7 +11,6 @@ const Add = (props) => {
   const [startDate, setStartDate] = useState("");
   const [chaptersRead, setChaptersRead] = useState("");
   const [lastRead, setLastRead] = useState("");
-  const [starReview, setStarReview] = useState("");
   const [thoughts, setThoughts] = useState("");
   const history = useHistory();
 
@@ -28,9 +27,9 @@ const Add = (props) => {
       setChaptersRead(bookStuff.fields.chaptersread);
       setLastRead(bookStuff.fields.lastread);
       setThoughts(bookStuff.fields.thoughts);
-      
-      }
-    }, [props.books, params.id]);
+
+    }
+  }, [props.books, params.id]);
 
   console.log(props.books)
 
@@ -47,10 +46,19 @@ const Add = (props) => {
     e.preventDefault();
 
 
-    await axios.post(baseURL, { fields }, config);
-    props.setToggleFetch((prev) => !prev);
-    history.push("/");
+
+    if (params.id) {
+      const editURL = `${baseURL}/${params.id}`;
+      await axios.put(editURL, { fields }, config);
+      props.setToggleFetch((prev) => !prev);
+      history.push("/");
+    } else {
+      await axios.post(baseURL, { fields }, config);
+      props.setToggleFetch((prev) => !prev);
+      history.push("/");
+    }
   }
+
 
 
   return (
