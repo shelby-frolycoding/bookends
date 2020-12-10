@@ -88,13 +88,30 @@ justify-content: center;
 
 .home-icon {
   text-decoration: none;
+  color: rgb(211, 165, 48);
 }
 .book-icon {
   text-decoration: none;
+  color: rgb(34, 193, 124);
 }
 .new-icon {
   text-decoration: none;
+  color: rgb(218, 105, 85)
 }
 .write-icon {
   text-decoration: none;
+  color: rgb(40, 178, 237);
 }
+.home-icon:hover {
+background-color: rgba(201, 201, 201, 0.906);
+}
+.book-icon:hover {
+background-color: rgba(201, 201, 201, 0.906);
+}
+.new-icon:hover {
+  background-color:rgba(201, 201, 201, 0.906);
+}
+.write-icon:hover {
+  background-color: rgba(201, 201, 201, 0.906);
+}
+

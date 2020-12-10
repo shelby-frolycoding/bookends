@@ -22,7 +22,7 @@ display: flex;
 justify-content: center;
 text-align: center;
 margin-left: 30%;
-margin-top: -45%;
+margin-top: -50%;
 color: black;
 font-family: 'Oswald', sans-serif;
 font-size: 20px;
@@ -46,8 +46,8 @@ border-style: none;
   text-align: left;
   justify-content: flex-start;
   display: flex;
-  margin-left: 26%;
-  margin-top: 40px;
+  margin-left: 27%;
+  margin-top: 60px;
   margin-bottom: 20px;
   }
 .book-show {
@@ -60,10 +60,23 @@ margin-left: -70%;
  margin-left: -70%;
   }
 
-  .delete-log {
+.delete-log {
   margin-left: -5%;
-  margin-top: 65%;
+  margin-top: 65%; 
+  height: 30px;
+}
+
+  .log-trash {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding-top: 2px;
+
   }
+  .delete-log:hover {
+ background-color: tomato;
+  
+    }
 
 .log-data {
 margin-left: 46%;

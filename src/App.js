@@ -40,12 +40,15 @@ function App() {
       </Route>
 
       <Route path='/add-book'>
-        <Add setToggleFetch={setToggleFetch} />
+        <Add books={books} setToggleFetch={setToggleFetch} />
       </Route>
 
       <Route path='/log'>
         <Log setToggleFetch={setToggleFetch} />
         <Showlog setToggleFetch={setToggleFetch} toggleFetch = {toggleFetch} />
+      </Route>
+      <Route path='/edit/:id'>
+        <Add books={books} setToggleFetch={setToggleFetch} />
       </Route>
 
 

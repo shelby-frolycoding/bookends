@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { logURL, config } from "../services";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 function Showlog(props) {
@@ -44,7 +46,7 @@ function Showlog(props) {
           </div>
         </div>
         <div className="delete-log">
-          <button onClick={handleDelete}>🗑</button>
+          <button  className= "log-trash" onClick={handleDelete}><FontAwesomeIcon icon={faTrashAlt} /></button>
         </div>
       </div>
 

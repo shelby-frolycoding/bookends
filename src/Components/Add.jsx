@@ -1,9 +1,8 @@
 import axios from "axios";
-import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useHistory, useParams } from "react-router-dom";
 import { baseURL, config } from '../services/index';
 import './Add.css';
-
 
 
 const Add = (props) => {
@@ -16,13 +15,31 @@ const Add = (props) => {
   const [thoughts, setThoughts] = useState("");
   const history = useHistory();
 
+  const params = useParams();
+
+
+  useEffect(() => {
+    if (params.id && props.books.length > 0) {
+      const bookStuff = props.books.find((book) => book.id === params.id);
+      console.log(bookStuff)
+      setTitle(bookStuff.fields.title);
+      setAuthor(bookStuff.fields.author);
+      setStartDate(bookStuff.fields.startdate);
+      setChaptersRead(bookStuff.fields.chaptersread);
+      setLastRead(bookStuff.fields.lastread);
+      setThoughts(bookStuff.fields.thoughts);
+      
+      }
+    }, [props.books, params.id]);
+
+  console.log(props.books)
+
   let fields = {
     title: title,
     author: author,
     startdate: startDate,
     chaptersread: chaptersRead,
     lastread: lastRead,
-    starreview: starReview,
     thoughts: thoughts,
   };
 
@@ -86,15 +103,6 @@ const Add = (props) => {
               setLastRead(e.target.value);
             }}
           />
-          <label htmlFor='starReview'>Stars</label>
-          <input
-            type='text'
-            name='starReview'
-            value={starReview}
-            onChange={(e) => {
-              setStarReview(e.target.value);
-            }}
-          />
           <label htmlFor='thoughts'>Thoughts</label>
           <input
             type='text'
@@ -104,8 +112,8 @@ const Add = (props) => {
               setThoughts(e.target.value);
             }}
           />
-          
-          <button className= "add-button" type='submit' >add me</button>
+
+          <button className="add-button" type='submit' >add me</button>
 
           {/* </div> */}
         </form>
