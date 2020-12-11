@@ -8,6 +8,8 @@ import Log from "./Components/Log";
 import Home from "./Components/Home";
 import Showlog from "./Components/Showlog";
 import { baseURL, config } from "./services";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDumpsterFire } from "@fortawesome/free-solid-svg-icons";
 import './App.css';
 
 function App() {
@@ -51,8 +53,13 @@ function App() {
         <Add books={books} setToggleFetch={setToggleFetch} />
       </Route>
 
-
-
+      <div className="foots">
+        <footer>
+          <FontAwesomeIcon icon={faDumpsterFire} />
+        froly coding
+        <FontAwesomeIcon icon={faDumpsterFire} />
+        </footer>
+      </div>
     </div>
   );
 }
