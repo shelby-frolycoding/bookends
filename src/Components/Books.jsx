@@ -54,7 +54,7 @@ function Books(props) {
             {/* all my buttons */}
             <div className="button-fix">
               <Link to={`/edit/${item.id}`}>
-                <button><FontAwesomeIcon icon={faEdit} /></button>
+                <button className= "edit-but"><FontAwesomeIcon icon={faEdit} /></button>
               </Link>
               <div className="delete-button">
                 <button className="trash" onClick={handleDelete}><FontAwesomeIcon icon={faTrashAlt} /></button>

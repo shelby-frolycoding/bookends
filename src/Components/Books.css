@@ -51,19 +51,22 @@
     
   }
  .button-fix {
-width: 31px;
-height: 40px;
+width: 50px;
+height: 50px;
 margin-left: 20px;
+justify-content: center;
  }
   
   .trash {
     background-color: transparent;
     border: none;
-    font-size: 25px;
+    font-size: 90%;
     display: flex;
     justify-content: center;
     text-align: center;
     color: rgb(46, 46, 46);
+    margin-bottom: 50%;
+    margin-top: -300%;
    
     
     
@@ -72,6 +75,24 @@ margin-left: 20px;
   .delete-button:hover {
   background-color: tomato;
 
+  }
+  .edit-but:hover {
+  background-color: rgb(60, 199, 167);
+  }
+  
+  .delete-button{
+  margin-bottom: 20%;
+  margin-top: 15%;
+  font-size: 250%;
+  
+  }
+  .edit-but {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-size: 200%;
+  
+  
   }
 
   /* MEDIA */
