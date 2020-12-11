@@ -42,12 +42,13 @@ function Showlog(props) {
           </div>
           <div className="log-show">
             <h1 className="h-one">Thoughts:</h1>
-            <h2 className= "log-data">{item.fields.log}</h2>
-          </div>
-        </div>
-        <div className="delete-log">
+            <h2 className="log-data">{item.fields.log}</h2>
+            <div className="delete-log">
           <button  className= "log-trash" onClick={handleDelete}><FontAwesomeIcon icon={faTrashAlt} /></button>
         </div>
+          </div>
+        </div>
+        
       </div>
 
 

@@ -48,7 +48,7 @@ const Log = (props) => {
           onChange={(e) => {
             setLogDate(e.target.value);
           }} />
-        <label htmlFor='Log'>Thoughts, Feelings, Epiphanies?</label>
+        <label htmlFor='Log'>Thoughts?</label>
         <input className = "thought-input"
           type='text'
           name='log'

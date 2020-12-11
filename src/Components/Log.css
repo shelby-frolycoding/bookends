@@ -1,11 +1,11 @@
 .log-input {
 font-family: 'Oswald', sans-serif;
-width: 105%;
+width: 25vw;
 }
 
 .thought-input {
-height: 100px;
-width: 105%;
+height: 6vw;
+width: 25vw;
 }
 
 .log-form {
@@ -15,8 +15,8 @@ width: 105%;
 }
 .add-log {
 
-width: 45%;
-height: 470px;
+width: 47vw;
+height: 35vw;
 background-color: rgba(255, 216, 59, 0.906);
 display: flex;
 flex-wrap: wrap;
@@ -26,15 +26,17 @@ margin-top: 5%;
 margin-left: 27%;
 color: black;
 font-family: 'Oswald', sans-serif;
-font-size: 140%;
+font-size: 1.5vw;
+padding-bottom: 3vw;
 
 }
 .log-button {
-width: 27%;
-height: 35px;
+width: 7vw;
+height: 3vw;
 font-family: 'Carter One', cursive;
 border-style: none;
 margin-left: 4%;
+font-size: 1vw;
 
 }
 .log-button:hover {
@@ -42,8 +44,8 @@ margin-left: 4%;
   }
 
   .show-log {
-  width: 50%;
-  height: 500px;
+  width: 50vw;
+  height: 37vw;
   background-color: rgba(254, 254, 254, 0.899);
   text-align: left;
   justify-content: flex-start;
@@ -51,9 +53,13 @@ margin-left: 4%;
   margin-left: 27%;
   margin-top: 10%;
   margin-bottom: 5%;
+  font-size: 1vw;
+  padding-right: 10px;
+
   }
 .book-show {
 margin-left: -70%;
+
   }
 .date-show {
 margin-left: -70%;
@@ -61,19 +67,30 @@ margin-left: -70%;
 .log-show {
  margin-left: -70%;
   }
+.h-one {
+width: 10;
+height: 2vw;
+font-size: 1vw;
+}
 
 .delete-log {
-  margin-left: -5%;
-  margin-top: 62%; 
-  height: 30px;
+  height: 2vw;
+  width: 3vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
 }
 
   .log-trash {
   border: none;
   background-color: transparent;
-  font-size: 150%;
+  font-size: 1.5vw;
   padding-top: 2px;
-  margin-bottom: 2%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  height: 2vw;
+  width: 3vw;
 
   }
   .delete-log:hover {
@@ -89,59 +106,69 @@ font-family: 'Oswald', sans-serif;
 
 /* MEDIA  */
 
-/* @media only screen and  (max-width: 700) {
+@media only screen and  (max-width: 700) {
 
   .log-input {
-    
+    display: flex;
     }
     
     .thought-input {
-   
+      display: flex;
     }
     
     .log-form {
-    
+      display: flex;
       
     }
     .add-log {
-    
+      display: flex;
     
     
     }
     .log-button {
-    
+      display: flex;
     
     }
     .log-button:hover {
+      display: flex;
       
       }
     
       .show-log {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
      
       }
     .book-show {
+      display: flex;
    
       }
     .date-show {
+      display: flex;
   
         }
     .log-show {
+      display: flex;
     
       }
     
     .delete-log {
+      display: flex;
      
     }
     
       .log-trash {
+        display: flex;
       
     
       }
   
     
     .log-data {
+      display: flex;
     
     }
     
 
-} */
+}

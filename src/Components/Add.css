@@ -42,8 +42,8 @@ font-size: 1vw;
 
 
 .add-button {
-height: 45px;
-width : 50%;
+height: 3vw;
+width : 10vw;
 margin-left: 0%;
 text-align: center;
 justify-content: center;
@@ -54,7 +54,7 @@ font-family: 'Carter One', cursive;
 font-size: 19px;
 margin-top: 10%;
 text-align: center;
-font-size: 90%;
+font-size: 1.6vw;
 
 }
 .add-button:hover {
