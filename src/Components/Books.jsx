@@ -24,27 +24,27 @@ function Books(props) {
           <div className="total-book">
 
             <div className="book-title">
-              <h1>Title:</h1>
+              <h1 className="h-books">Title:</h1>
               <h2>{item.fields.title}</h2>
             </div>
             <div className="author">
-              <h1>By:</h1>
+              <h1 className="h-books">By:</h1>
               <h2>{item.fields.author}</h2>
             </div>
             <div className="start-date">
-              <h1>Start Date:</h1>
+              <h1 className="h-books">Start Date:</h1>
               <h2>{item.fields.startdate}</h2>
             </div>
             <div className="chaptersread">
-              <h1>Last Chapter:</h1>
+              <h1 className="h-books">Last Chapter:</h1>
               <h2>{item.fields.chaptersread}</h2>
             </div>
             <div className="lastread">
-              <h1>Last Read:</h1>
+              <h1 className="h-books">Last Read:</h1>
               <h2>{item.fields.lastread}</h2>
             </div>
             <div className="thoughts">
-              <h1>Thoughts:</h1>
+              <h1 className="h-books">Thoughts:</h1>
               <h2>{item.fields.thoughts}</h2>
             </div>
             <div className="book-image">

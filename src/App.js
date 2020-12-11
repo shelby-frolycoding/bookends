@@ -30,7 +30,7 @@ function App() {
 
       <Route exact path='/'>
         <div className="header-fix">
-          <header>BookEnds</header>
+          <header className= "main-header">BookEnds</header>
         </div>
         <Home setToggleFetch={setToggleFetch} />
       </Route>

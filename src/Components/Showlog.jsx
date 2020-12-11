@@ -33,15 +33,15 @@ function Showlog(props) {
         <div className="all-log">
 
           <div className="book-show">
-            <h1>Title:</h1>
+            <h1 className="h-one">Title:</h1>
             <h2 className= "log-data">{item.fields.book}</h2>
           </div>
           <div className="date-show">
-            <h1>Date:</h1>
+            <h1 className="h-one">Date:</h1>
             <h2 className= "log-data">{item.fields.logdate}</h2>
           </div>
           <div className="log-show">
-            <h1>Thoughts:</h1>
+            <h1 className="h-one">Thoughts:</h1>
             <h2 className= "log-data">{item.fields.log}</h2>
           </div>
         </div>
