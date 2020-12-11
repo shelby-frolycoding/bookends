@@ -1,11 +1,11 @@
 .log-input {
 font-family: 'Oswald', sans-serif;
-width: 400px;
+width: 105%;
 }
 
 .thought-input {
 height: 100px;
-width: 400px;
+width: 105%;
 }
 
 .log-form {
@@ -15,8 +15,8 @@ width: 400px;
 }
 .add-log {
 
-width: 600px;
-height: 400px;
+width: 45%;
+height: 500px;
 background-color: rgba(255, 216, 59, 0.906);
 display: flex;
 justify-content: center;
@@ -25,11 +25,11 @@ margin-left: 30%;
 margin-top: -50%;
 color: black;
 font-family: 'Oswald', sans-serif;
-font-size: 20px;
+font-size: 140%;
 
 }
 .log-button {
-width: 90px;
+width: 27%;
 height: 35px;
 font-family: 'Carter One', cursive;
 border-style: none;
@@ -40,15 +40,15 @@ border-style: none;
   }
 
   .show-log {
-  width: 700px;
+  width: 50%;
   height: 500px;
   background-color: rgba(254, 254, 254, 0.899);
   text-align: left;
   justify-content: flex-start;
   display: flex;
-  margin-left: 27%;
-  margin-top: 60px;
-  margin-bottom: 20px;
+  margin-left: 28%;
+  margin-top: 7%;
+  margin-bottom: 5%;
   }
 .book-show {
 margin-left: -70%;
@@ -69,8 +69,9 @@ margin-left: -70%;
   .log-trash {
   border: none;
   background-color: transparent;
-  font-size: 20px;
+  font-size: 150%;
   padding-top: 2px;
+  margin-bottom: 2%;
 
   }
   .delete-log:hover {
