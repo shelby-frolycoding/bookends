@@ -1,6 +1,6 @@
-.fix-div {
-  margin-top: -55%;
-}
+
+
+
 
 .total-book img {
   width: 65%;
@@ -43,8 +43,9 @@
     padding-top: 10px;
     border-radius: 10px;
     margin-top: 3%;
-    margin-bottom: 60%;
-    /* margin-bottom: 820px; */
+    margin-bottom: 3%;
+    margin-left: 4%;
+    
     
     
     
@@ -73,15 +74,45 @@ margin-left: 20px;
 
   }
 
-  html,
-body {
-    /*background: red;*/
-    height: 100%;
-}
-@media (min-width: 600px) {
-  html,
-  body {
-      /*background: green;*/
-      height: 100%;
-  }
-}
+  /* MEDIA */
+
+  /* @media only screen and  (max-width: 700) {
+
+    .fix-div {
+      
+    }
+    
+    .total-book img {
+    
+      
+      }
+      
+      .book-title, .author, .chaptersread, .start-date, .lastread, .thoughts {
+    
+        
+        
+       
+      }
+     
+      
+      
+      
+      .total-book{
+     
+        
+        
+      }
+     .button-fix {
+   
+     }
+      
+      .trash {
+       
+        
+        
+      }
+      
+     
+    
+      
+  } */

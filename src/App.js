@@ -30,7 +30,7 @@ function App() {
 
       <Route exact path='/'>
         <div className="header-fix">
-          <header className= "main-header">BookEnds</header>
+          {/* <header className="main-header">BookEnds</header> */}
         </div>
         <Home setToggleFetch={setToggleFetch} />
       </Route>
@@ -45,7 +45,7 @@ function App() {
 
       <Route path='/log'>
         <Log setToggleFetch={setToggleFetch} />
-        <Showlog setToggleFetch={setToggleFetch} toggleFetch = {toggleFetch} />
+        <Showlog setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />
       </Route>
       <Route path='/edit/:id'>
         <Add books={books} setToggleFetch={setToggleFetch} />

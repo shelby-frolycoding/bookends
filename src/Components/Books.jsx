@@ -20,15 +20,15 @@ function Books(props) {
     
     if (props.books) {
       return (
-        <div className="fix-div">
+     
           <div className="total-book">
 
             <div className="book-title">
-              <h1 className="h-books">Title:</h1>
+              <h1>Title:</h1>
               <h2>{item.fields.title}</h2>
             </div>
             <div className="author">
-              <h1 className="h-books">By:</h1>
+              <h1 className= "h-book">By:</h1>
               <h2>{item.fields.author}</h2>
             </div>
             <div className="start-date">
@@ -62,9 +62,7 @@ function Books(props) {
             </div>
           </div>
         
-        </div>
-
-    
+       
 
      
       )

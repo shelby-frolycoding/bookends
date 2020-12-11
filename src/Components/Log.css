@@ -84,15 +84,62 @@ margin-left: 46%;
 font-family: 'Oswald', sans-serif;
 }
 
-html,
-body {
-    /*background: red;*/
-    height: 100%;
-}
-@media (min-width: 600px) {
-  html,
-  body {
-      /*background: green;*/
-      height: 100%;
-  }
-}
+
+/* MEDIA  */
+
+/* @media only screen and  (max-width: 700) {
+
+  .log-input {
+    
+    }
+    
+    .thought-input {
+   
+    }
+    
+    .log-form {
+    
+      
+    }
+    .add-log {
+    
+    
+    
+    }
+    .log-button {
+    
+    
+    }
+    .log-button:hover {
+      
+      }
+    
+      .show-log {
+     
+      }
+    .book-show {
+   
+      }
+    .date-show {
+  
+        }
+    .log-show {
+    
+      }
+    
+    .delete-log {
+     
+    }
+    
+      .log-trash {
+      
+    
+      }
+  
+    
+    .log-data {
+    
+    }
+    
+
+} */
