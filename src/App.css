@@ -68,7 +68,7 @@ height: 100px;
 .nav-bar {
 
 font-size: 480%;
-padding: 10px;
+padding: 1%;
 padding-bottom: 10px;
 margin: 0 auto;
 background-color: rgba(232, 232, 232, 0.865);
@@ -86,26 +86,29 @@ justify-content: flex-start;
 .home-icon {
   text-decoration: none;
   color: rgb(211, 165, 48);
-  padding-right: 5%;
-  padding-left: 10%;
+  padding-right: 6%;
+  padding-left: 6%;
+  margin-left: 9%;
 }
 .book-icon {
   text-decoration: none;
   color: rgb(34, 193, 124);
-  padding-right: 5%;
-  padding-left: 10%;
+  padding-right: 6%;
+  padding-left: 6%;
+  
 }
 .new-icon {
   text-decoration: none;
   color: rgb(218, 105, 85);
-  padding-right: 5%;
-  padding-left: 10%;
+  padding-right: 6%;
+  padding-left: 6%;
 }
 .write-icon {
   text-decoration: none;
   color: rgb(40, 178, 237);
-  padding-right: 5%;
-  padding-left: 10%;
+  padding-right: 6%;
+  padding-left: 6%;
+  margin-right: 15%;
 }
 .home-icon:hover {
 background-color: rgba(201, 201, 201, 0.906);
