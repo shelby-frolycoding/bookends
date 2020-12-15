@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { baseURL, config } from "../services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt, faEdit } from "@fortawesome/free-solid-svg-icons";
+// import logo from "./logo.png";
 
 import "./Books.css";
 
@@ -48,7 +49,7 @@ function Books(props) {
             <h2>{item.fields.thoughts}</h2>
           </div>
           <div className="book-image">
-            <img src={'https://png2.cleanpng.com/sh/9ef5f9e48d34d826335c9e296b7bdd4a/L0KzQYm3VMA4N5V3fZH0aYP2gLBuTfJwd5wyft5qdD3ndcTwhB4uapD0gAU2NXHmSYm7g8YyPZM5TKQ3OUC1RoeBV8cyPWM4SacBMUa5QImBWb5xdpg=/kisspng-book-flat-design-books-5ac984c615b442.9026687715231561660889.png'} alt="bookboi" />
+            <img src={"https://i.ibb.co/pLMk72m/218-2180174-photo-archive-g-book-stack-book-icons.png"} alt="logo" />
           </div>
 
           {/* all my buttons */}

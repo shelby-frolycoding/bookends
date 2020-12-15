@@ -33,16 +33,16 @@ function Showlog(props) {
         <div className="all-log">
 
           <div className="book-show">
-            <h1 className="h-one">Title:</h1>
-            <h2 className= "log-data">{item.fields.book}</h2>
+            <h4 className="h-one">Title:</h4>
+            <h4 className= "log-data">{item.fields.book}</h4>
           </div>
           <div className="date-show">
-            <h1 className="h-one">Date:</h1>
-            <h2 className= "log-data">{item.fields.logdate}</h2>
+            <h4 className="h-one">Date:</h4>
+            <h4 className= "log-data">{item.fields.logdate}</h4>
           </div>
           <div className="log-show">
-            <h1 className="h-one">Thoughts:</h1>
-            <h2 className="log-data">{item.fields.log}</h2>
+            <h4 className="h-thoughts">Thoughts:</h4>
+            <h4 className="log-data">{item.fields.log}</h4>
             <div className="delete-log">
           <button  className= "log-trash" onClick={handleDelete}><FontAwesomeIcon icon={faTrashAlt} /></button>
         </div>

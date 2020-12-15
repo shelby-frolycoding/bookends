@@ -3,22 +3,24 @@
 
 
 .total-book img {
-  width: 65%;
+  width: 60%;
   height: auto;
-  margin-top: -81%;
+  margin-top: -87%;
   padding-left: 10px;
   display: flex;
+  
   
   }
   
   .book-title, .author, .chaptersread, .start-date, .lastread, .thoughts {
-    font-size: 13.5px;
+    font-size: 12.0px;
     margin-top: -1%;
     margin-bottom: -5px;
     font-family: 'Carter One', cursive;
     text-shadow: 1.5px 1.5px black;
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
+    margin-right: 5px;
     
     
    

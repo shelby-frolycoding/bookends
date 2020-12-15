@@ -35,7 +35,7 @@ width: 7vw;
 height: 3vw;
 font-family: 'Carter One', cursive;
 border-style: none;
-margin-left: 4%;
+margin-left: 0%;
 font-size: 1vw;
 
 }
@@ -65,20 +65,45 @@ margin-left: -70%;
 margin-left: -70%;
     }
 .log-show {
- margin-left: -70%;
+ margin-left: -38%;
+ width: 70vw;
+ 
   }
 .h-one {
-width: 10;
+width: 6vw;
 height: 2vw;
 font-size: 1vw;
+margin-left: 43%;
+background-color: rgba(255, 216, 59, 0.906);
+border-radius: 25px;
+padding: .1vw;
+font-size: 1vw;
+display: flex;
+justify-content: center;
+font-family: 'Oswald', sans-serif;
+
+
+}
+.h-thoughts {
+width: 6vw;
+height: 2vw;
+font-size: 1vw;
+margin-left: 41%;
+background-color: rgba(255, 216, 59, 0.906);
+border-radius: 25px;
+padding: .1vw;
+font-size: 1vw;
+display: flex;
+justify-content: center;
+font-family: 'Oswald', sans-serif;
+
 }
 
 .delete-log {
   height: 2vw;
   width: 3vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
+  margin-left: 40%;
+  margin-top: 17%;
 }
 
   .log-trash {
@@ -86,9 +111,7 @@ font-size: 1vw;
   background-color: transparent;
   font-size: 1.5vw;
   padding-top: 2px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
+  
   height: 2vw;
   width: 3vw;
 
